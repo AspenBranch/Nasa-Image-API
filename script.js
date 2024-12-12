@@ -6,11 +6,14 @@ async function fetchNASAImage() {
     const data = await response.json();
     if (data.media_type === 'image') {
       document.getElementById('output').innerHTML = `
-        <h2>${data.title}</h2>
         <img src="${data.url}" alt="${data.title}" style="display: block;margin-left: auto;margin-right: auto;
   width: 40%;border-color: azure;border-width: 30px;">
         <p>${data.explanation}</p>
       `;
+      document.getElementById('title').innerHTML = `
+        <h1>${data.title}</h1>
+      `;
+      document.getElementById('fetchButton').remove();
     } else {
       document.getElementById('output').innerHTML = `<p>Media type not supported.</p>`;
     }
