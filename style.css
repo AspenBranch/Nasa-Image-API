@@ -37,6 +37,8 @@ h1{
   width: 10%;
   margin: auto;
   position: relative;
+  border-radius: 10px;
+  padding-top: 0px;
 }
 .xyz {
   display: grid;
@@ -45,6 +47,7 @@ h1{
 }
 .fetchbutton:hover {
   color: #fff;
+  background-image: linear-gradient(315deg, #b8643a 0%, #9c2a10 74%)
 }
 .fetchbutton:active {
   top: 2px;
