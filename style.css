@@ -16,6 +16,7 @@ output{
   color: white;
   letter-spacing: 1px;
   font-family: Montserrat;
+  
 }
 h2{
   text-align: center;
@@ -45,7 +46,9 @@ h1{
   touch-action: manipulation;
   align-self: center;
   align-items: center;
-  text
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
 }
 
 .fetchbutton:before {
@@ -54,13 +57,9 @@ h1{
     45deg,
     #ff0000,
     #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
+    #09ff00,
+    #2600ff,
+    #00ff3c,
   );
   position: absolute;
   top: -2px;
