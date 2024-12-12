@@ -1,6 +1,7 @@
 body {
   background-color: rgb(50, 50, 50);
   font-family: 'Segoe UI';
+  justify-content: center;
 }
 p {
   text-align: center;
@@ -16,7 +17,6 @@ output{
   color: white;
   letter-spacing: 1px;
   font-family: Montserrat;
-  
 }
 h2{
   text-align: center;
@@ -31,70 +31,21 @@ h1{
   font-family: 'Courier New';
   letter-spacing: 5px;
 }
-.fetchbutton {
-  padding: 0.6em 2em;
-  border: none;
-  outline: none;
-  color: rgb(255, 255, 255);
-  background: #111;
-  cursor: pointer;
+.fetchbutton{
+  background-color: #89d8d3;
+  background-image: linear-gradient(315deg, #e07f4f 0%, #ea411b 74%);
+  width: 10%;
+  margin: auto;
   position: relative;
-  z-index: 0;
-  border-radius: 10px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  align-self: center;
-  align-items: center;
-  display: inline-block;
-  text-align: center;
-  justify-content: center;
 }
-
-.fetchbutton:before {
-  content: "";
-  background: linear-gradient(
-    45deg,
-    #ff0000,
-    #ff7300,
-    #09ff00,
-    #2600ff,
-    #00ff3c,
-  );
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing-fetchbutton 20s linear infinite;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
+.xyz {
+  display: grid;
+  place-items: center;
+  height: 10vh; /* Adjust height as needed */
 }
-
-@keyframes glowing-fetchbutton {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
+.fetchbutton:hover {
+  color: #fff;
 }
-
-.fetchbutton:after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #222;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
+.fetchbutton:active {
+  top: 2px;
 }
